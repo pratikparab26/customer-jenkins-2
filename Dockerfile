@@ -76,7 +76,6 @@ COPY jenkins-support /usr/local/bin/jenkins-support
 COPY jenkins.sh /usr/local/bin/jenkins.sh
 COPY /configs/users "$JENKINS_HOME"/users/
 COPY /configs/jenkins_home_config.xml "$JENKINS_HOME"/config.xml
-COPY tini-shim.sh /bin/tini
 ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/jenkins.sh"]
 
 # Name the jobs
