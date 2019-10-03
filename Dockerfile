@@ -109,6 +109,5 @@ RUN /usr/local/bin/install-plugins.sh \
  dashboard-view:2.9.10 \
  pipeline-stage-view:2.4 \
  parameterized-trigger:2.32 \
- #bitbucket:1.1.5 \
  git:3.0.5 \
- github:1.26.0`
+ github:1.26.0
