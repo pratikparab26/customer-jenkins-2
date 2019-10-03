@@ -95,12 +95,12 @@ COPY /configs/${job_name_1}_config.xml "$JENKINS_HOME"/jobs/${job_name_1}/config
 COPY /configs/${job_name_2}_config.xml "$JENKINS_HOME"/jobs/${job_name_2}/config.xml
 
 # Create build file structure
-RUN mkdir -p "$JENKINS_HOME"/jobs/${job_name_1}/latest/
-RUN mkdir -p "$JENKINS_HOME"/jobs/${job_name_1}/builds/1/
+#RUN mkdir -p "$JENKINS_HOME"/jobs/${job_name_1}/latest/
+#RUN mkdir -p "$JENKINS_HOME"/jobs/${job_name_1}/builds/1/
 
 # Create build file structure
-RUN mkdir -p "$JENKINS_HOME"/jobs/${job_name_2}/latest/
-RUN mkdir -p "$JENKINS_HOME"/jobs/${job_name_2}/builds/1/
+#RUN mkdir -p "$JENKINS_HOME"/jobs/${job_name_2}/latest/
+#RUN mkdir -p "$JENKINS_HOME"/jobs/${job_name_2}/builds/1/
 
 COPY install-plugins.sh /usr/local/bin/install-plugins.sh
 
