@@ -105,9 +105,9 @@ COPY /configs/${job_name_2}_config.xml "$JENKINS_HOME"/jobs/${job_name_2}/config
 COPY install-plugins.sh /usr/local/bin/install-plugins.sh
 
 # Add/Remove  the plugins you want
-RUN /usr/local/bin/install-plugins.sh \
- dashboard-view:2.9.10 \
- pipeline-stage-view:2.4 \
- parameterized-trigger:2.32 \
- git:3.0.5 \
- github:1.26.0
+#RUN /usr/local/bin/install-plugins.sh \
+# dashboard-view:2.9.10 \
+# pipeline-stage-view:2.4 \
+# parameterized-trigger:2.32 \
+# git:3.0.5 \
+# github:1.26.0
